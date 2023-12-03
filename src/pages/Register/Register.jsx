@@ -57,16 +57,9 @@ const Register = () => {
       <div className='form_container'>
 
         <div className='banner_left_form'>
-          <h3>Logo<span>LG</span></h3>
+          <h3>Alugue<span>Aqui</span></h3>
           <div className='container_box_questions'>
-            <div className="question_box">
-              <h3>Em que setores este sistema é útil?</h3>
-              <p>É útil para empresas de todos os setores que desejam simplificar a gestão de pedidos e vendas.</p>
-            </div>
-            <div className="question_box">
-              <h3>Quais benefícios este sistema oferece às empresas?</h3>
-              <p>Ajuda a economizar tempo, recursos e a aumentar a eficiência operacional.</p>
-            </div>
+            
           </div>
         </div>
 

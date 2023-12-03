@@ -19,7 +19,7 @@ const Navbar = () => {
   const [search, setSearch] = useState("")
   const [isShowMenu, setIsShowMenu] = useState(false)
   
-  const { isShowCart, setIsShowCart } = useCartContextValues()
+  const { productsCart, isShowCart, setIsShowCart } = useCartContextValues()
 
   const navigate = useNavigate()
 
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
       
       <div className={styles.active_cart}>
-          {user && <button className='btn btn_icons' onClick={() => setIsShowCart(!isShowCart)}><AiOutlineShoppingCart/></button>}
+          {user && <button className='btn btn_icons' onClick={() => setIsShowCart(!isShowCart)}><AiOutlineShoppingCart/>{productsCart.length > 0 && <span>{productsCart.length}</span>}</button>}
           {!user && <Link className='btn btn_icons' to="/login"><AiOutlineUser/></Link>}
       </div>
     </nav>

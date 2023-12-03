@@ -50,6 +50,25 @@ nav form svg {
     font-size: 1.3em;
 }
 
+.active_cart button{
+    position: relative;
+}
+
+.active_cart button span{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Effects link navbar */
 nav ul li a::after{
     content: "";

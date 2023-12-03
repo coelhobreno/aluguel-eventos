@@ -40,16 +40,9 @@ const Login = () => {
       <div className='form_container'>
 
         <div className='banner_left_form'>
-          <h3>Logo<span>LG</span></h3>
+          <h3>Alugue<span>Aqui</span></h3>
           <div className='container_box_questions'>
-            <div className="question_box">
-              <h3>Este sistema é adequado para pequenas empresas?</h3>
-              <p>Sim, é adequado para empresas de todos os tamanhos, desde pequenas startups até grandes corporações.</p>
-            </div>
-            <div className="question_box">
-              <h3>Posso acessar o sistema de qualquer lugar?</h3>
-              <p>Sim, nosso sistema é baseado na web e pode ser acessado de qualquer dispositivo com conexão à internet.</p>
-            </div>
+            
           </div>
         </div>
 
