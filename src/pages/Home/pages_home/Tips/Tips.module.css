@@ -1,0 +1,36 @@
+.tips{
+    max-width: 1000px;
+    padding: 1em;
+}
+
+.tips h2{
+    line-height: 18px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.tipsList{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.tipsList p{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .5em;
+    font-style: italic;
+    letter-spacing: -.05em;
+}
+
+.tipsList ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.tipsList ul li{
+    font-size: 1em;
+    letter-spacing: -.05em;
+}

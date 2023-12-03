@@ -1,0 +1,9 @@
+.right_container{
+    padding: .5rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.outlet_containt{
+    margin-top: 1rem;
+}

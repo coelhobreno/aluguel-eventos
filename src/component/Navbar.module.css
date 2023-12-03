@@ -1,0 +1,161 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .active_redirect_area{
+    display: none;
+}
+
+nav .redirect_area, nav .redirect_area_responsive{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+nav ul li {
+    margin-right: 5px;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a {
+    color: #222c35;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 500px;
+    gap: 2px;
+    margin-right: 10px;
+}
+
+nav form input{
+    flex-grow: 1;
+}
+
+nav form svg {
+    font-size: 1.3em;
+}
+
+/* Effects link navbar */
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -2px;
+    left: 0;
+    background-color: #222c35;
+    transition: .3s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    background-color: #222c35;
+    transition: .4s ease-in-out;
+}
+
+.active::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    background-color: #222c35;
+}
+
+/*Responsive*/
+
+@media(max-width: 590px) {
+
+    nav .active_redirect_area{
+       display: block;
+       z-index: 2;
+    }
+
+    nav .redirect_area, nav .redirect_area_responsive{
+        padding: 3em 1em 1em 1em;
+        background-color: #336b6edc;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: -200px;
+        width: 180px;
+        z-index: 1;
+        align-items: baseline;
+        display: block;
+        border-radius: 10px 2px;
+    }
+
+    nav .redirect_area_responsive{
+        top: 0;
+    }
+
+    nav .redirect_area ul, nav .redirect_area_responsive ul{
+        flex-direction: column;
+    }
+
+    nav .redirect_area ul li, nav .redirect_area_responsive ul li{
+        max-width: fit-content;
+        margin-bottom: .7em;
+    }
+
+    nav .redirect_area ul li a, nav .redirect_area_responsive ul li a{
+        color: #FFF;
+    }
+
+    .redirect_area svg, .redirect_area_responsive svg{
+        display: none;
+    }
+
+    .redirect_area form input, nav .redirect_area_responsive form input{
+        width: 100%;
+        margin-top: 1em;
+        border: 1px solid #FFF;
+        color: #FFF;
+    }
+
+    .redirect_area form input::placeholder, nav .redirect_area_responsive form input::placeholder{
+        color: #EEE;
+        font-weight: 400;
+    }
+
+
+    .redirect_area form input:focus{
+        color: #FFF;
+    }
+
+    /*Effects NavLink*/
+
+    nav ul li a::after {
+        background-color: #FFF;
+    }
+
+    nav ul li a:hover::after {
+        background-color: #FFF;
+    }
+
+    .active::after {
+        background-color: #FFF;
+    }
+
+}

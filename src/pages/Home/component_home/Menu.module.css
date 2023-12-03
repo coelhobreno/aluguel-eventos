@@ -1,0 +1,96 @@
+.left_container {
+    background-color: #336B6E;
+    padding: .5rem;
+    width: 180px;
+    height: 100%;
+    position: relative;
+}
+
+.left_container h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #F6F6EF;
+}
+
+.left_container ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #F6F6EF;
+    padding: .5rem;
+}
+
+.left_container ul li a svg {
+    font-size: 1.3rem;
+}
+
+.left_container ul li a span {
+    font-size: 1rem;
+}
+
+.left_container ul li:hover {
+    background-color: #417577;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.info_user {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    border-top: 1px solid #DDD;
+    align-items: center;
+    padding: .5rem;
+    text-align: center;
+
+}
+
+.info_user button:hover{
+    border: 1px solid #721c24;
+    box-shadow: inset 0 0 5px 1px #721c24 !important;
+}
+
+.info_user img {
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+}
+
+.info_user h3{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F6F6EF;
+}
+
+.info_user button svg{
+    font-size: .9em;
+    color: #FFF;
+}
+
+@media(max-width: 435px){
+    .left_container{
+        width: fit-content;
+        padding: 1em;
+    }
+
+    .left_container h2{
+        display: none;
+    }
+
+    .left_container ul li a span{
+        display: none;
+    }
+
+    .info_user h3 {
+        display: none;
+    }
+
+    .info_user button{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,29 @@
+.card_cart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #31414e;
+    color: #FFF;
+    padding: .5em 0;
+}
+
+.card_cart img{
+    height: 60px;
+    width: 60px;
+}
+
+.card_cart p.description{
+    width: 120px;
+    word-wrap: break-word;
+}
+
+.card_cart p.price{
+    width: 65px;
+}
+
+@media(max-width: 350px){
+    .card_cart img{
+        display: none;
+    }
+}
