@@ -30,10 +30,6 @@ const ProductCard = ({ product }) => {
     setProductsCart([...productsCart, newProduct])
   })
 
-  useEffect(() => {
-    console.log(productsCart)
-  }, [productsCart])
-
   return (
 
     <div className={styles.product_card}>
